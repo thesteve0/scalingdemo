@@ -17,6 +17,13 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
+        <repository>
+            <id>jboss</id>
+            <url>http://repository.jboss.org/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -60,7 +67,21 @@ jboss-eap-*-maven-repository/org/jboss/spec/jboss-javaee-6.0
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>jaxrs-api</artifactId>
+            <version>3.0.8.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <version>3.0.8.Final</version>
+        </dependency>
+
+
+
+
+    </dependencies>
 	<profiles>
 		<profile>
 			<!-- When built in OpenShift the 'openshift' profile will be used when 
