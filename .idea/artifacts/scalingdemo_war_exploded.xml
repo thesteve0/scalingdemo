@@ -10,7 +10,6 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax.activation:activation:1.1.1-redhat-2" />
           <element id="library" level="project" name="Maven: org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final-redhat-2" />
-          <element id="library" level="project" name="Maven: org.jboss.resteasy:jaxrs-api:3.0.8.Final" />
           <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jaxrs:3.0.8.Final" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.2.1" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.2.1" />
