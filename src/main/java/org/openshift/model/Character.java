@@ -9,7 +9,7 @@ import static java.util.Arrays.asList;
 public class Character {
     Random rand = new Random();
     private int  hitPoints, goldPieces;
-    private final HashSet<String> attributeNames =  new HashSet<String>(asList("strength", "intelligence", "charisma", "wisdom", "dexterity", "constitution"));
+    private final HashSet<String> attributeNames =  new HashSet<String>(asList("Strength", "Intelligence", "Charisma", "Wisdom", "Dexterity", "Constitution"));
     private List<String> races =  asList( "Human", "Dwarf", "Halfling", "Elf", "Gnome", "Half-Elf", "Half-Orc", "Nerd");
     private List<String> playerClass =  asList("Warrior", "Ranger", "Paladin", "Cleric", "Monk", "Wizard", "Thief", "Assassin", "Druid", "Wizard", "Coder");
     private HashMap allAttributes = new HashMap(18);
@@ -31,7 +31,7 @@ public class Character {
     private void setAttributes(HashMap aAttributes){
         //Roll up the normal attributes
         for (String name: attributeNames){
-            aAttributes.put(name, rand.nextInt(18));
+            aAttributes.put(name, rand.nextInt(17) + 1);
         }
 
     }
