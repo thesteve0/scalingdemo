@@ -7,17 +7,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="scalingdemo" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: javax.activation:activation:1.1.1-redhat-2" />
-          <element id="library" level="project" name="Maven: org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final-redhat-2" />
-          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jaxrs:3.0.8.Final" />
-          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.2.1" />
-          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.2.1" />
-          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
-          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.6" />
-          <element id="library" level="project" name="Maven: commons-io:commons-io:2.1" />
-          <element id="library" level="project" name="Maven: net.jcip:jcip-annotations:1.0" />
-        </element>
       </element>
     </root>
   </artifact>
