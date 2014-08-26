@@ -54,6 +54,10 @@ public class Character {
         return allAttributes;
     }
 
+    public void setName(String name){
+        allAttributes.put("Name", name);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -74,6 +78,7 @@ public class Character {
 
         return true;
     }
+
 
     @Override
     public int hashCode() {

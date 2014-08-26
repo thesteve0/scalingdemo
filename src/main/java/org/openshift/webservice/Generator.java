@@ -6,6 +6,7 @@ import org.openshift.model.Character;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import java.util.HashMap;
 
 /**
@@ -21,6 +22,15 @@ public class Generator {
     @Produces("text/json")
     public HashMap MakeACharacter(){
         return character.getAllAttributes();
+    }
+
+    @GET()
+    @Produces("text/json")
+    public HashMap MakeACharacterWithAName(@QueryParam("name") String name){
+
+        character.setName(name)
+        return character.getAllAttributes();
+
     }
 
 }
