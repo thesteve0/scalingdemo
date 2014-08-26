@@ -3,10 +3,7 @@ package org.openshift.webservice;
 import org.openshift.model.*;
 import org.openshift.model.Character;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
+import javax.ws.rs.*;
 import java.util.HashMap;
 
 /**
@@ -26,7 +23,8 @@ public class Generator {
 
     @GET()
     @Produces("text/json")
-    public HashMap MakeACharacterWithAName(@QueryParam("name") String name){
+    @Path("{name}")
+    public HashMap MakeACharacterWithAName(@PathParam("name") String name){
 
         character.setName(name);
         return character.getAllAttributes();
