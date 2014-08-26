@@ -28,7 +28,7 @@ public class Generator {
     @Produces("text/json")
     public HashMap MakeACharacterWithAName(@QueryParam("name") String name){
 
-        character.setName(name)
+        character.setName(name);
         return character.getAllAttributes();
 
     }
