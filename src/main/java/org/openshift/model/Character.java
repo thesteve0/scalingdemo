@@ -22,7 +22,7 @@ public class Character {
 
     public Character(){
 
-        this(Double.toString(Math.random()));
+        this(UUID.randomUUID().toString());
 
     }
 
