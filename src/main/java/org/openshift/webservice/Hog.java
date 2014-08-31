@@ -8,24 +8,24 @@ import java.util.Vector;
 public class Hog {
 
 	@GET()
-	@Produces("text/json")
 	@Path("quick")
-	public Vector EatMemorySimulate() {
-		Vector v = new Vector<String>();
-		v.add(new String("java.lang.OutOfMemoryError"));
+	public void EatMemorySimulate() {
 		System.out.println("java.lang.OutOfMemoryError");
-		return v;
 	}
 
 	@GET()
 	@Produces("text/json")
 	public void EatMemory() {
 		Vector v = new Vector();
-		while (true) {
-			byte b[] = new byte[10485760];
-			v.add(b);
-			Runtime rt = Runtime.getRuntime();
-			System.out.println("free memory: " + rt.freeMemory());
+		try {
+			while (true) {
+				byte b[] = new byte[10485760];
+				v.add(b);
+				Runtime rt = Runtime.getRuntime();
+				System.out.println("free memory: " + rt.freeMemory());
+			}
+		} catch (java.lang.OutOfMemoryError e) {
+			System.out.println("java.lang.OutOfMemoryError");
 		}
 	}
 
