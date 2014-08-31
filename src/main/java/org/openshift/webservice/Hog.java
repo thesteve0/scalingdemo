@@ -10,7 +10,7 @@ public class Hog {
 	@GET()
 	@Path("quick")
 	public void EatMemorySimulate() {
-		System.out.println("java.lang.OutOfMemoryError");
+		System.out.println(" java.lang.OutOfMemoryError");
 	}
 
 	@GET()
@@ -25,7 +25,7 @@ public class Hog {
 				System.out.println("free memory: " + rt.freeMemory());
 			}
 		} catch (java.lang.OutOfMemoryError e) {
-			System.out.println("java.lang.OutOfMemoryError");
+			System.out.println(" java.lang.OutOfMemoryError");
 		}
 	}
 
